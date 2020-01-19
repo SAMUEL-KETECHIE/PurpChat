@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Chats";
+}
+
+    <div class="justify-content-center">
+        <!--SIDE MENU HERE-->
+        <div class="side-menu">
+            <div class="purpLogo">
+                <img src="~/siteImg/purpChat.jpg" />
+            </div>
+            <button class="btn btn-light"><span class="fas fa-user-cog fa-2x"></span></button>
+            <ul class="cont-side-menu">
+                <li class="chat-members"><a href="#">Samuel</a></li>
+                <li class="chat-members"><a href="#">Wendolin</a></li>
+                <li class="chat-members"><a href="#">Whitney</a></li>
+            </ul>
+
+        </div>
+
+        <!--TOP NAVIGATION BAR HERE-->
+        <div class="chat-navbar">
+            <ul class="cont-navbar">
+                <li class="btn btn-outline-light active">My Chats</li>
+                <li class="btn btn-outline-light">My Groups</li>
+                <li class="btn btn-outline-light">Status</li>
+            </ul>
+        </div>
+
+        <!--CHAT BOX HERE-->
+        <div class="chatbox">
+            <div class="chatlogs">
+
+                <div class="chat freind">
+                    <div class="user-photo">
+                        <img src="~/userImages/userTwo.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Sample text here
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo">
+                        <img src="~/userImages/userOne.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Sample text here again
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat freind">
+                    <div class="user-photo">
+                        <img src="~/userImages/userTwo.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Hello Wendolin ...!!!
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo">
+                        <img src="~/userImages/userOne.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Hi sweetie..!!!. Hope you are doing well today....
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat freind">
+                    <div class="user-photo">
+                        <img src="~/userImages/userTwo.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book
+                        publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo">
+                        <img src="~/userImages/userOne.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book
+                        publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat freind">
+                    <div class="user-photo">
+                        <img src="~/userImages/userTwo.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book
+                        publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat freind">
+                    <div class="user-photo">
+                        <img src="~/userImages/userTwo.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book
+                        publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo">
+                        <img src="~/userImages/userOne.jpg" />
+                    </div>
+                    <p class="chat-message">
+                        It's OK buddy. I get it.
+                        What the fuck..!!! you flooding my imbox.
+                        @DateTime.Now.ToShortTimeString()
+                    </p>
+                </div>
+
+            </div>
+            <div class="chat-form">
+                <textarea placeholder="Type a message"></textarea>
+                <button class="btn btn-lg btn-success"><span class="fas fa-paper-plane"></span></button>
+
+            </div>
+        </div>
+        <!--END OF CHAT BOX-->
+
+    </div>
