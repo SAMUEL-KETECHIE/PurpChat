@@ -1,4 +1,4 @@
-﻿namespace PurpChat.Data.Models
+﻿namespace PurpChat.Models
 {
     public enum ChatType
     {

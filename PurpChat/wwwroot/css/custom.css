@@ -44,12 +44,11 @@ body {
     margin-bottom:1rem;
 }
 
-.cont-side-menu li{
-    margin-top: 1rem;
-    margin-bottom: 1px;
+.cont-side-menu-item {
+    margin: 0;
     padding: 0;
-    text-decoration:none;
-
+    text-decoration: none;
+    font-size:14px;
 }
 
     .chatbox {
@@ -114,7 +113,7 @@ body {
     font-size: 12px;    
 }
 
-.freind .chat-message {
+.other .chat-message {
     background: #1adda4;
 }
 
@@ -204,3 +203,62 @@ body {
 .purpLogo img {
     width: 100%;
 }
+
+
+/** MODAL AREA**/
+
+.create-modal {
+    display: none;
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: rgba(0.2, 0.2,0.2,0.8);
+    
+}
+
+    .create-modal.mod-active {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+
+
+.mod-body {
+    position: relative;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #8F9779;
+    padding: 1rem;
+}
+
+    .mod-body > .close-mod {
+        position: absolute;
+        top:0px;
+        right:0px;
+        font-size:18px;
+        margin-top:0;
+        border-radius:15%;
+    }
+
+    .mod-body > * {
+        margin-top: 0.75rem;
+    }
+
+    .mod-body > header {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .mod-body > div > input {
+        width: 100%;
+    }
+
+    .mod-body > footer {
+        text-align:center;
+
+    }

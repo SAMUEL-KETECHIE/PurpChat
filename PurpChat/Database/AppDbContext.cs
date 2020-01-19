@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using PurpChat.Data.Models;
+using PurpChat.Models;
 
-namespace PurpChat.Data.Database
+namespace PurpChat.Database
 {
     public class AppDbContext : IdentityDbContext<User>
     {

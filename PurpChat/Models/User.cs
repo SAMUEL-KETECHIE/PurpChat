@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
 
-namespace PurpChat.Data.Models
+namespace PurpChat.Models
 {
     public class User:IdentityUser
     {

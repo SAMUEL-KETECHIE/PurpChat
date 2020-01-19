@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Chat>
+
+<div class="side-menu">
+    <div class="purpLogo">
+        <a href="/">
+            <img src="~/siteImg/purpChat.jpg" />
+        </a>
+    </div>
+    @*<button class="btn btn-light"><span class="fas fa-user-cog fa-2x"></span></button>*@
+    <button class="btn" id="create-group"><span class="fas fa-plus-circle"></span> Create Group</button>
+
+    <button class="btn" id="create-private"><span class="fas fa-plus-circle"></span> Add Private</button>
+    <div class="cont-side-menu">
+        <ul class="cont-side-menu-item">
+            @foreach (var chat in Model)
+            {
+                <li class="chat-members">
+                    <a asp-action="Chat" asp-controller="Home" asp-route-id="@chat.Id">
+                        @chat.Name
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<!--TOP NAVIGATION BAR HERE-->
+<div class="chat-navbar">
+    <ul class="cont-navbar">
+        <li class="btn btn-outline-light">My Chats</li>
+
+        <li class="btn btn-outline-light">My Groups</li>
+
+        <li class="btn btn-outline-light">Status</li>
+    </ul>
+</div>

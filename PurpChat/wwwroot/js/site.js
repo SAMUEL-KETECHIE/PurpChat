@@ -1,4 +1,21 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿let createGroupBtn = document.getElementById('create-group');
+let createPrivateBtn = document.getElementById('create-private');
 
-// Write your JavaScript code.
+let createChatModal = document.getElementById('create-chat-modal');
+let createPrivateModal = document.getElementById('create-private-modal');
+
+createGroupBtn.addEventListener("click", function() {
+    createChatModal.classList.add('mod-active');
+});
+
+var closeModal = function (event) {
+    event.preventDefault();
+    createChatModal.classList.remove('mod-active');
+    createPrivateModal.classList.remove('mod-active');
+};
+
+createPrivateBtn.addEventListener("click", function () {
+    createPrivateModal.classList.add('mod-active');
+});
+
+//close-modal-btn

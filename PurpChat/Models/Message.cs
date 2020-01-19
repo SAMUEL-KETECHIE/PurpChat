@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PurpChat.Data.Models
+namespace PurpChat.Models
 {
-    [Table("ct.Message")]
     public class Message
     {
         public int Id { get; set; }
